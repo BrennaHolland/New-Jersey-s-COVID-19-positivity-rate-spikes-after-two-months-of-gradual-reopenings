@@ -14,12 +14,12 @@ You will find this is far easier than the opposite task of using CSS to cram you
 /*********************************************************************
   YOUR MOBILE/BASE STYLES GO HERE
 *********************************************************************/
-@media screen and (max-width: 479px) {
+@media screen and (max-width: 767px) {
     html {
-        padding-left: 20px;
+        padding-top: 20px;
         padding-right: 20px;
-        Padding-top: 20px;
         padding-bottom: 20px;
+        padding-left: 20px;
     }
 }
 
@@ -27,7 +27,7 @@ body,
 html {
     /* Sets default font-size to 16px, ensuring 1em = 16px; */
     font-size: 16px;
-    background-color: floralwhite
+    background-color: floralwhite;
 }
 
 h1 {
@@ -42,6 +42,15 @@ h1 {
 h2 {
     font-family: Optima, Segoe, "Segoe UI", Candara, Calibri, Arial, sans-serif;
     font-size: 14px;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: normal;
+    line-height: 15px;
+}
+
+figcaption {
+    font-family: Optima, Segoe, "Segoe UI", Candara, Calibri, Arial, sans-serif;
+    font-size: 12px;
     font-style: normal;
     font-variant: normal;
     font-weight: normal;
@@ -85,49 +94,36 @@ h1 {
     font-family: Optima, sans-serif
 }
 
+/* responsive images */
+img {
+    width: 100%;
+}
+
 /*********************************************************************
   YOUR TABLET/DESKTOP STYLES GO HERE
 *********************************************************************/
-@media(min-width: 681px) {
+@media screen and (min-width: 768px) {
     html {
-        /* all four sides */
-        padding-left: 400px;
-        padding-right: 400px;
-        Padding-top: 50px;
+        padding-top: 50px;
+        padding-right: 200px;
         padding-bottom: 50px;
+        padding-left: 200px;
     }
+}
 
-    /* Any adjustments for tablets and larger go here.
+/* Any adjustments for tablets and larger go here.
     Note these styles will be applied to anything 681px or larger -- so tablet AND desktop */
-    /*********************************************************************
+/*********************************************************************
   YOUR DESKTOP-ONLY STYLES GO HERE
 *********************************************************************/
-    @media screen and (max-width: 767px) {
-        html {
-            /* all four sides */
-            padding-left: 400px;
-            padding-right: 400px;
-            Padding-top: 50px;
-            padding-bottom: 50px;
-        }
+@media screen and (min-width: 1024px) {
+    html {
+        padding-top: 50px;
+        padding-right: 400px;
+        padding-bottom: 50px;
+        padding-left: 400px;
+    }
+}
 
-        @media screen and (max-width: 991px) {
-            html {
-                /* all four sides */
-                padding-left: 400px;
-                padding-right: 400px;
-                Padding-top: 50px;
-                padding-bottom: 50px;
-            }
-
-            @media(max-width: 800px) {
-                html {
-                    padding-left: 400px;
-                    padding-right: 400px;
-                    Padding-top: 50px;
-                    padding-bottom: 50px;
-                }
-            }
-
-            /* Any adjustments for desktop and larger go here.
+/* Any adjustments for desktop and larger go here.
     Note these styles will be applied to anything 729px or larger -- so desktop */
